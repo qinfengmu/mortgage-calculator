@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "贷款计算器",
+  "usingComponents": {
+    "nav-tab": "/components/nav-tab",
+    "accumulated-loan": "/pages/accumulatedLoan/accumulatedLoan",
+    "commercial-loan": "/pages/commercialLoan/commercialLoan",
+    "syndicated-loan": "/pages/syndicatedLoan/syndicatedLoan"
+  }
+}

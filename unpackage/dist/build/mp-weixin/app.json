@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/accumulatedLoan/accumulatedLoan",
+    "pages/commercialLoan/commercialLoan",
+    "pages/syndicatedLoan/syndicatedLoan",
+    "pages/caclResult/caclResult",
+    "pages/calcDetail/calcDetail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "贷款计算器",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

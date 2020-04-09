@@ -1,0 +1,69 @@
+@import "mixins";
+.calculator-form{
+    padding: 0 32upx;
+}
+.form-row {
+    display: flex;
+    padding: 32upx 0;
+    align-items: center;
+    font-size: 28upx;
+    border-bottom: 1upx solid #eee;
+    color:#333;
+    &-err {
+        border-bottom-color: #ff0000;
+        .form-input {
+            color:#f00;
+        }
+    }
+    .form-label {
+        padding: 10upx 0;
+    }
+    .form-input {
+        height: 60upx;
+        flex: 1;
+        text-align: right;
+        &::placeholder {
+            color:#cccccc;
+            font-size: 28upx;
+        }
+    }
+
+    &.slt-row {
+
+    }
+    .slt-text {
+        position: relative;
+        padding-right: 30upx;
+        flex:1;
+        text-align: right;
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: 5upx;
+            content: " ";
+            display: inline-block;
+            margin-top: -2upx;
+            height: 8upx;
+            width: 8upx;
+            border-width: 1upx 1upx 0 0;
+            border-color: #999;
+            border-style: solid;
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+
+        }
+    }
+}
+.form-bottom {
+    padding: 32upx 0;
+    .form-btn {
+        display: inline-block;
+        width: 100%;
+        height: 80upx;
+        line-height: 80upx;
+        text-align: center;
+        color:#ffffff;
+        background: #00b3fe;
+        border-radius: 20upx;
+        font-size: 32upx;
+    }
+}

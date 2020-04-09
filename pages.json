@@ -3,13 +3,39 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "贷款计算器"
 			}
-		}
-	],
+		},
+		{
+			"path": "pages/accumulatedLoan/accumulatedLoan",
+			"style": {
+				"navigationBarTitleText": "公积金贷款"
+			}
+		},
+		{
+			"path": "pages/commercialLoan/commercialLoan",
+			"style": {
+				"navigationBarTitleText": "商业贷款"
+			}
+		},
+		{
+			"path": "pages/syndicatedLoan/syndicatedLoan",
+			"style": {
+				"navigationBarTitleText": "组合贷款"
+			}
+		}	  
+        ,{
+            "path" : "pages/caclResult/caclResult",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/calcDetail/calcDetail",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "贷款计算器",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
