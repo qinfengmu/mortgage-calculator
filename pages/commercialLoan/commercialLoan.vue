@@ -119,7 +119,6 @@ export default {
 					data = this.calc_averageCapital(this.loanAmount, this.rate, this.phase);
 				}
 				this.$store.dispatch('setResult',data);
-				console.log(this.$store.state);
 				uni.navigateTo({
 					url: '../caclResult/caclResult',
 					success: res => {},

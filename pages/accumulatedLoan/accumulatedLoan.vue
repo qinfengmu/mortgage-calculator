@@ -91,8 +91,7 @@ export default {
 			this.paymentTypeIndex = e.target.value;
 			this.paymentType = this.paymentTypeArray[this.paymentTypeIndex].value;
 		},
-		calc() {
-			console.log('total:', this.loanAmount, 'phase:', this.phase, 'rate:', this.rate, 'paymentType:', this.paymentType);
+		calc() {		
 			if (this.loanAmount == '') {
 				uni.showToast({
 					icon: 'none',
@@ -120,7 +119,6 @@ export default {
 					data = this.calc_averageCapital(this.loanAmount, this.rate, this.phase);
 				}
 				this.$store.dispatch('setResult',data);
-				console.log(this.$store.state);
 				uni.navigateTo({
 					url: '../caclResult/caclResult',
 					success: res => {},

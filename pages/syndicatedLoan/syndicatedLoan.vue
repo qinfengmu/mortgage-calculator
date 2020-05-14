@@ -164,9 +164,6 @@ export default {
 				return false;
 			}
 			//等额本息还款
-			
-			console.log(this.loanAmount, this.rate, this.phase);
-			console.log(this.acc_loanAmount, this.acc_rate, this.phase);
 			if (this.paymentType == 1) {
 				var data1 = this.calc_averageInterest(this.loanAmount, this.rate, this.phase);
 				var data2 = this.calc_averageInterest(this.acc_loanAmount, this.acc_rate, this.phase);
@@ -182,7 +179,6 @@ export default {
 			// 	data = this.calc_averageCapital(this.loanAmount, this.rate, this.phase);
 			// }
 			this.$store.dispatch('setResult', data);
-			console.log(this.$store.state);
 			uni.navigateTo({
 				url: '../caclResult/caclResult',
 				success: res => {},
